@@ -43,8 +43,6 @@ public class MainActivity extends Activity {
             		out.println("connection succeeded");
             		((MySocket)getApplication()).setSocket(client1);
             		Intent intent = new Intent(MainActivity.this, TwoActivity.class);
-            		intent.putExtra("ip", ip);
-                    intent.putExtra("dk", dk);
                     startActivity(intent);
             		} catch (UnknownHostException e) { 
             		e.printStackTrace(); 
