@@ -14,11 +14,13 @@ import java.io.PrintStream;
 import java.net.Socket;
 import java.net.SocketTimeoutException;
 import java.net.UnknownHostException;
+import java.util.ArrayList;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.widget.EditText;
-
+import main.haha;
+import protocol.Frame;
 public class TwoActivity extends Activity {
 	private Button btnshow;   
     private EditText editText1;
@@ -78,7 +80,12 @@ public class TwoActivity extends Activity {
                   	BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
                     BufferedReader buf =  new BufferedReader(new InputStreamReader(client1.getInputStream()));
                     echo = buf.readLine();
-            		Log.e("!!!!", echo);
+                    Log.e("!!!!", echo);
+                    haha haha = new haha();
+                    ArrayList<Frame> b = haha.find(echo);
+                    for(int i = 0 ;i < b.size() ; i++){
+                    	Log.e("!!!!",(haha.DataInfo(b.get(i)).toString()));
+            		}
                   	} catch (UnknownHostException e) { 
                   	e.printStackTrace(); 
                   	} catch (IOException e) { 
