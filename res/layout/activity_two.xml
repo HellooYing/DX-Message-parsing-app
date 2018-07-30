@@ -27,6 +27,7 @@
             android:gravity="center|center_horizontal|center_vertical">
             <Button
                 android:id="@+id/btnshow"
+                android:paddingTop="8dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -35,5 +36,69 @@
                 android:textSize="18sp"
                 android:textColor="#FFFFFF"
                 android:gravity="center"/>
+             </LinearLayout>
+            <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:gravity="center|center_horizontal|center_vertical">
+            <Button
+                android:id="@+id/gw"
+                android:paddingTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/shapecircle"
+                android:text="感温"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:gravity="center"/>
+             </LinearLayout>
+            <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:gravity="center|center_horizontal|center_vertical">
+            <Button
+                android:id="@+id/gy"
+                android:paddingTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/shapecircle"
+                android:text="感烟"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:gravity="center"/>
+             </LinearLayout>
+            <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:gravity="center|center_horizontal|center_vertical">
+            <Button
+                android:id="@+id/sd"
+                android:paddingTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/shapecircle"
+                android:text="手动报警"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:gravity="center"/>
         </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/txtOne"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:gravity="center"
+        android:text="还未收到信息"
+        android:textColor="#000000"
+        android:textStyle="bold|italic"
+        android:background="#00FFFF"
+        android:textSize="18sp" />
+
          </LinearLayout>

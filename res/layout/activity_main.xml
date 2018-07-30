@@ -16,7 +16,7 @@
     android:layout_height="wrap_content"
     android:gravity="center"
     android:textColor="#fefefe"
-    android:hint="ip地址"
+    android:text="172.28.229.245"
     android:background="@drawable/translucen"/>
     </RelativeLayout>
     <RelativeLayout 
@@ -28,7 +28,7 @@
     tools:context="${relativePackage}.${activityClass}" >
     <EditText
     android:id="@+id/editText2"
-    android:hint="端口号"
+    android:text="1000"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
 
